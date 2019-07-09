@@ -1,29 +1,29 @@
 ###   移动端开发环境搭建(Mac)
 
-#### 版本：v.1.0.0
+- 版本：v.1.0.0
 
-#### 说明: 本文档主要用于快速搭建项目开发环境
+- 说明: 本文档主要用于快速搭建项目开发环境
 
 #### 准备工具
 
 安装下面这些工具，以确保可以得到更好的开发体验：
 
-1. git
+- git
 
 请前往网址：https://git-scm.com/download/mac 进行下载,安装完成后需要使用简单的命令配置你的id，email，具体操作如下所示： 
 
  git config --global user.name "Your Name"
  git config --global user.email "email@example.com"
 
-2. SSH Client 比如 PuTTy, 用于安全登录 ionic Appflow
+- SSH Client 比如 PuTTy, 用于安全登录 ionic Appflow
 
-3. node.js
+- node.js
  
 首先确保安装了node.js, 用 node -v 指令来查看，如果还没有安装，可以到地址 https://nodejs.org 进行安装。
 
-4. 代码编辑器： 推荐使用 Visual Studio Code, 如果还没有安装，请到地址 https://code.visualstudio.com/ 进行下载，可以根据自己的喜好进行一些简单的配置。
+- 代码编辑器： 推荐使用 Visual Studio Code, 如果还没有安装，请到地址 https://code.visualstudio.com/ 进行下载，可以根据自己的喜好进行一些简单的配置。
 
-5. 命令行终端(cli): 可以用 mac 自带的终端，推荐使用 iterm
+- 命令行终端(cli): 可以用 mac 自带的终端，推荐使用 iterm
 
 ### 安装 cordova 和 ionic 
 
