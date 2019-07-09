@@ -29,19 +29,19 @@
 
 - 运行下面的命令：
 
-`$ npm install -g cordova ionic`
+- `$ npm install -g cordova ionic`
 
 -g 选项表示全局安装。在全局安装软件包时，可能会发生权限错误。考虑设置 npm 在没有提升权限的情况下全局操作。 建议不要使用 npm 作为 Admin（或在 Mac 和 Linux 上使用 sudo ）运行命令提示符。
 
 - 如果已经安装，确保更新到最新的版本，使用下面的命令
 
-`sudo npm update -g cordova ionic`
+- `sudo npm update -g cordova ionic`
 
 - 创建一个应用
 
 在系统合适的目录下，使用我们的“标签” 应用模板创建一个 ionic angular 应用：
 
-`ionic  start myApp tabs`
+- `ionic  start myApp tabs`
 
 - 创建成功后，使用命令 cd myApp 目录下，执行命令 `ionic serve`, 或者执行 `ionic serve -l` (带热更新)会自动打开流量器显示页面。
 
@@ -57,9 +57,9 @@
 
 1. java
 
-原生 Android 应用程序使用 Java 编程语言编译。从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html下载 JDK8。
+- 原生 Android 应用程序使用 Java 编程语言编译。从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html下载 JDK8。
 
-温馨提示：Cordova 与最新版本的 Java 不兼容。您必须安装 JDK8 才能使用 Cordova 构建 Android 应用程序。
+- 温馨提示：Cordova 与最新版本的 Java 不兼容。您必须安装 JDK8 才能使用 Cordova 构建 Android 应用程序。
 
 2. gradle
 
@@ -98,52 +98,52 @@ AVD 由 AVD Manager管理。在Android Studio欢迎屏幕中，单击配置> AVD
 
 ### 设置安卓设备
 
-1. 在设备上启用 USB 调试。打开设置，导航到开发者选项，然后启用 USB 调试。可能需要首先启用“开发者选项”菜单。
+- 在设备上启用 USB 调试。打开设置，导航到开发者选项，然后启用 USB 调试。可能需要首先启用“开发者选项”菜单。
 
-2. 确保设备有权连接到计算机。对于macOS，无需其他设置。
+- 确保设备有权连接到计算机。对于macOS，无需其他设置。
 
-3. 通过设备数据线将设备连接到计算机并使用以下命令验证连接是否正常：
+- 通过设备数据线将设备连接到计算机并使用以下命令验证连接是否正常：
 
-  `$ adb devices`
+- `$ adb devices`
 
-有关故障排除和详细信息，请参阅 https://developer.android.com/studio/command-line/adb进行纠错。
+- 有关故障排除和详细信息，请参阅 https://developer.android.com/studio/command-line/adb进行纠错。
 
 ### ios 设置
 
 要定位 iOS，需要一些其他环境设置。不幸的是，iOS应用程序只能在macOS上创建。
 
-1. Xcode
+Xcode
 
 Xcode 是用于创建本机 iOS 应用程序的 IDE。它包括iOS SDK和 Xcode 命令行工具。可以使用Apple帐户免费下载 Xcode（https://developer.apple.com/download/）, 也可以通过App Store安装。
 
-2. 创建一个开发团队
+创建一个开发团队
 
 所有iOS应用程序都必须经过代码签名，即使是开发。幸运的是，Xcode 通过自动代码签名使这一切变得简单。唯一的先决条件是 Apple ID。打开 Xcode 并导航到 Xcode > Preference > Accounts。 如果没有列出，请添加Apple ID。 登录后，个人团队将出现在Apple ID的团队列表中。
 
-3. 创建 ios 模拟器
+创建 ios 模拟器
 
 iOS 模拟器在 Mac 上模拟 iOS 设备，打开 Xcode 并导航到 Window > Devices and Simulators。创建一个iPhone X 模拟器。
 
-4. ios-sim & ios-deploy 
+ios-sim & ios-deploy 
 
-`sudo npm install -g ios-sim`
+- `sudo npm install -g ios-sim`
 
-6. 添加 ios 平台，编译，模拟器运行
+添加 ios 平台，编译，模拟器运行
 
 ios-sim 和 ios-deploy 是在开发过程中将应用程序部署到 iOS 模拟器和 iOS 设备的实用程序。它们可以使用 npm 全局安装。
  
- `$ npm install -g ios-sim`
- `$ npm install -g ios-deploy`
+ - `$ npm install -g ios-sim`
+ - `$ npm install -g ios-deploy`
 
  ### 添加平台(平台可以是 android，ios)
 
  进入项目所在文件夹，在命令提示符中，执行添加平台命令。
 
- `ionic cordova platform add $platform`
+ - `ionic cordova platform add $platform`
 
  ### 真机运行
 
- `ionic cordova run $platform --prod`
+ - `ionic cordova run $platform --prod`
 
  ### 在手机中调试
 
