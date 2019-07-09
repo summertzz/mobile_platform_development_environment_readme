@@ -57,9 +57,9 @@
 
 1. java
 
-- 原生 Android 应用程序使用 Java 编程语言编译。从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html下载 JDK8。
+原生 Android 应用程序使用 Java 编程语言编译。从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html下载 JDK8。
 
-- 温馨提示：Cordova 与最新版本的 Java 不兼容。您必须安装 JDK8 才能使用 Cordova 构建 Android 应用程序。
+温馨提示：Cordova 与最新版本的 Java 不兼容。您必须安装 JDK8 才能使用 Cordova 构建 Android 应用程序。
 
 2. gradle
 
