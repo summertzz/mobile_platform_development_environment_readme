@@ -21,9 +21,13 @@
  
 首先确保安装了node.js, 用 node -v 指令来查看，如果还没有安装，可以到地址 https://nodejs.org 进行安装。
 
-- 代码编辑器： 推荐使用 Visual Studio Code, 如果还没有安装，请到地址 https://code.visualstudio.com/ 进行下载，可以根据自己的喜好进行一些简单的配置。
+- 代码编辑器 
 
-- 命令行终端(cli): 可以用 mac 自带的终端，推荐使用 iterm
+推荐使用 Visual Studio Code, 如果还没有安装，请到地址 https://code.visualstudio.com/ 进行下载，可以根据自己的喜好进行一些简单的配置。
+
+- 命令行终端(cli)
+
+可以用 mac 自带的终端，推荐使用 iterm
 
 ### 安装 cordova 和 ionic 
 
