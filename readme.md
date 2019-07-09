@@ -27,17 +27,17 @@
 
 运行下面的命令：
 
-- `$ npm install -g cordova ionic`
+`$ npm install -g cordova ionic`
 
 如果已经安装，确保更新到最新的版本，使用下面的命令
 
-- `sudo npm update -g cordova ionic`
+`sudo npm update -g cordova ionic`
 
 创建一个应用
 
 在系统合适的目录下，使用我们的 “tabs” 应用模板创建一个 ionic angular 应用：
 
-- `ionic start myApp tabs`
+`ionic start myApp tabs`
 
 创建成功后，使用命令 cd myApp 目录下，执行命令 `ionic serve`, 或者执行 `ionic serve -l` (带热更新)会自动打开流量器显示页面。
 
@@ -53,7 +53,7 @@
 
 1. java
 
-原生 Android 应用程序使用 Java 编程语言编译。从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html JDK8。
+原生 Android 应用程序使用 Java 编程语言编译, 从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html JDK8。
 
 温馨提示：Cordova 与最新版本的 Java 不兼容。您必须安装 JDK8 才能使用 Cordova 构建 Android 应用程序。
 
@@ -99,7 +99,7 @@ AVD 由 AVD Manager 管理。在 Android Studio 欢迎屏幕中，单击 config>
 - 确保设备有权连接到计算机。对于 macOS，无需其他设置。
 
 - 通过设备数据线将设备连接到计算机并使用以下命令验证连接是否正常：
-
+- `adb install -r xxx.apk `
 - `$ adb devices`
 
 - 有关故障排除和详细信息，请参阅 https://developer.android.com/studio/command-line/adb 进行纠错。
