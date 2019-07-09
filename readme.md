@@ -1,4 +1,4 @@
-###   移动端开发环境搭建(Mac)
+### 移动端开发环境搭建(Mac)
 
 - 版本：v.1.0.0
 
@@ -8,18 +8,14 @@
 
 安装下面这些工具，以确保可以得到更好的开发体验：
 
-- git
-
-请前往网址：https://git-scm.com/download/mac 进行下载, 安装完成后需要使用简单的命令配置用户的 id，email，具体操作如下所示： 
+<font color=#0099ff size=3>git</font>：请前往网址：https://git-scm.com/download/mac 进行下载, 安装完成后需要使用简单的命令配置用户的 id，email，具体操作如下所示： 
 
  `git config --global user.name "Your Name"`
  `git config --global user.email "email@example.com"`
 
 或者直接在终端里面输入 git，点击回车键(enter) 进行安装。
 
-- SSH Client 
-
-比如 PuTTy, 用于安全登录 ionic Appflow。
+<font color=#0099ff size=3>SSH Client</font>：比如 PuTTy, 用于安全登录 ionic Appflow。
 
 - node.js
  
