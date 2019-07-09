@@ -15,37 +15,31 @@
 
 或者直接在终端里面输入 git，点击回车键(enter) 进行安装。
 
-<font color=#0099ff size=3>SSH Client</font>：比如 PuTTy, 用于安全登录 ionic Appflow。
+<font color=#38f size=3>ssh client</font>：比如 PuTTy, 用于安全登录 ionic Appflow。
 
-- node.js
- 
-首先确保安装了 node.js, 用 `node -v` 指令来查看，如果还没有安装，可以到地址 https://nodejs.org 进行安装。
+<font color=#38f size=3>node.js</font>：首先确保安装了 node.js, 用 `node -v` 指令来查看，如果还没有安装，可以到地址 https://nodejs.org 进行安装。
 
-- 代码编辑器 
+<font color=#38f size=3>代码编辑器</font>：推荐使用 Visual Studio Code, 如果还没有安装，请到地址 https://code.visualstudio.com/ 进行下载，可以根据自己的喜好进行一些简单的配置。
 
-推荐使用 Visual Studio Code, 如果还没有安装，请到地址 https://code.visualstudio.com/ 进行下载，可以根据自己的喜好进行一些简单的配置。
-
-- 命令行终端(cli)
-
-可以用 mac 自带的终端，其他终端工具推荐使用 iterm2。
+<font color=#38f size=3>命令行终端(cli)</font>：可以用 mac 自带的终端，其他终端工具推荐使用 iterm2。
 
 ### 安装 cordova 和 ionic 
 
-- 运行下面的命令：
+运行下面的命令：
 
 - `$ npm install -g cordova ionic`
 
-- 如果已经安装，确保更新到最新的版本，使用下面的命令
+如果已经安装，确保更新到最新的版本，使用下面的命令
 
 - `sudo npm update -g cordova ionic`
 
-- 创建一个应用
+创建一个应用
 
 在系统合适的目录下，使用我们的 “tabs” 应用模板创建一个 ionic angular 应用：
 
 - `ionic start myApp tabs`
 
-- 创建成功后，使用命令 cd myApp 目录下，执行命令 `ionic serve`, 或者执行 `ionic serve -l` (带热更新)会自动打开流量器显示页面。
+创建成功后，使用命令 cd myApp 目录下，执行命令 `ionic serve`, 或者执行 `ionic serve -l` (带热更新)会自动打开流量器显示页面。
 
 ### angular + ionic Framework
 
