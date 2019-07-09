@@ -106,11 +106,10 @@ $ adb devices
 ```
 ionic run $platform(android|ios) -l -c-console-logs
 ```
-## ![图片](https://uploader.shimo.im/f/R0eLpQE3mtc8PHPA.png!thumbnail)
-![图片](https://uploader.shimo.im/f/JPBdLp6ppig9BL89.png!thumbnail)
+## ![图片](https://uploader.shimo.im/f/R0eLpQE3mtc8PHPA.png!thumbnail)![图片](https://uploader.shimo.im/f/JPBdLp6ppig9BL89.png!thumbnail)
 ![图片](https://uploader.shimo.im/f/eLZ5qetnqGMkthng.png!thumbnail)
-![图片](https://uploader.shimo.im/f/T0gqBVqRBJMFVaLn.png!thumbnail)
-![图片](https://uploader.shimo.im/f/p0qNjWy7PjUE2s9G.png!thumbnail)
+
+![图片](https://uploader.shimo.im/f/tcJTx6EywN0EENNs.png!thumbnail)![图片](https://uploader.shimo.im/f/15BFCOwH08kQB1as.png!thumbnail)
 ##  ios 设置
 要定位 iOS，需要一些其他环境设置，不幸的是，iOS 应用程序只能在 macOS 上创建。
 * **Xcode**
@@ -135,7 +134,7 @@ ios-sim 和 ios-deploy 是在开发过程中将应用程序部署到 iOS 模拟�
 $ npm install -g ios-sim
 $ npm install -g ios-deploy
 ```
-## 打包程序
+## ![图片](https://uploader.shimo.im/f/PJP06C8h0mM72jl0.png!thumbnail)打包程序
 ```
 ionic cordova build $platform --release --prod
 ```
