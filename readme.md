@@ -51,42 +51,42 @@
 
 要定位 android 平台，需要一些额外的环境设置。可以在 Windows，macOS 和 Linux上创建 Android 应用程序。
 
-1. java
+java
 
 原生 Android 应用程序使用 Java 编程语言编译, 从下载页面 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html JDK8。
 
 温馨提示：Cordova 与最新版本的 Java 不兼容。您必须安装 JDK8 才能使用 Cordova 构建 Android 应用程序。
 
-2. gradle
+gradle
 
 Gradle 是 Android 应用中使用的构建工具，必须单独安装。有关详细信息，请参阅安装页面 https://gradle.org/install/ 进行安装。
 
-3. Android Studio
+Android Studio
 
 Android Studio 是用于创建原生 Android 应用程序的 IDE。它包括 Android SDK，需要配置它才能在命令行中使用。Android Studio 还用于创建 Android 虚拟设备，这是 Android 模拟器所必需的。应用程序也可以启动到设备。请参阅安装页面 https://developer.android.com/studio/ 进行安装。
 
-4. 安装 Android SDK
+安装 Android SDK
 
 安装完成后，打开 Android Studio，IDE 应检测到需要安装 Android SDK。在 SDK Components Setup 屏幕中，完成 SDK 的安装。记下 Android SDK 位置。默认情况下，安装了最新的稳定 SDK 平台，其中包含针对该版本 Android 所需的一组软件包。Android SDK 可以在 Android Studio 欢迎界面的 Configure > SDK Manager 菜单中使用 Android Studio 进行管理，也可以在 Android 项目中使用 Tools > SDK Manager 进行管理。
 
-5. 配置系统环境变量
+配置系统环境变量
 
 Android SDK 附带了有用的命令行工具，在使用它们之前，必须设置一些环境变量。在〜/ .bashrc，〜/ .bash_profile 或类似的 shell 启动脚本中，进行以下修改：
 
-  1. 设置 ANDROID_SDK_ROOT 环境变量。此路径应为上一节中使用的 Android SDK 位置。
+设置 ANDROID_SDK_ROOT 环境变量。此路径应为上一节中使用的 Android SDK 位置。
 
-    `$ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk`
+`$ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk`
 
-  2. 将 Android SDK命令行目录添加到 PATH。每个目录对应于命令行工具的类别.
+将 Android SDK命令行目录添加到 PATH。每个目录对应于命令行工具的类别。
 
-    # avdmanager, sdkmanager
-    export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+`# avdmanager, sdkmanager`
+`export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin`
 
-    # adb, logcat
-    export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+`# adb, logcat`
+`export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools`
 
-    # emulator
-    export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+`# emulator`
+`export PATH=$PATH:$ANDROID_SDK_ROOT/emulator`
 
 ### 创建一个安卓虚拟设备
 
@@ -94,15 +94,11 @@ AVD 由 AVD Manager 管理。在 Android Studio 欢迎屏幕中，单击 config>
 
 ### 设置安卓设备
 
-- 在设备上启用 USB 调试。打开设置，导航到开发者选项，然后启用 USB 调试。可能需要首先启用 “开发者选项” 菜单。
+在设备上启用 USB 调试。打开设置，导航到开发者选项，然后启用 USB 调试。可能需要首先启用 “开发者选项” 菜单。确保设备有权连接到计算机。对于 macOS，无需其他设置。通过设备数据线将设备连接到计算机并使用以下命令验证连接是否正常：
+`adb install -r xxx.apk `
+`$ adb devices`
 
-- 确保设备有权连接到计算机。对于 macOS，无需其他设置。
-
-- 通过设备数据线将设备连接到计算机并使用以下命令验证连接是否正常：
-- `adb install -r xxx.apk `
-- `$ adb devices`
-
-- 有关故障排除和详细信息，请参阅 https://developer.android.com/studio/command-line/adb 进行纠错。
+有关故障排除和详细信息，请参阅 https://developer.android.com/studio/command-line/adb 进行纠错。
 
 ### ios 设置
 
@@ -122,33 +118,33 @@ iOS 模拟器在 Mac 上模拟 iOS 设备，打开 Xcode 并导航到 Window > D
 
 ios-sim & ios-deploy 
 
-- `sudo npm install -g ios-sim`
+`sudo npm install -g ios-sim`
 
 添加 ios 平台，编译，模拟器运行
 
 ios-sim 和 ios-deploy 是在开发过程中将应用程序部署到 iOS 模拟器和 iOS 设备的实用程序。它们可以使用 npm 全局安装。
  
- - `$ npm install -g ios-sim`
- - `$ npm install -g ios-deploy`
+`$ npm install -g ios-sim`
+`$ npm install -g ios-deploy`
 
- ### 添加平台(平台可以是 android，ios)
+### 添加平台(平台可以是 android，ios)
 
- 进入项目所在文件夹，在命令提示符中，执行添加平台命令。
+进入项目所在文件夹，在命令提示符中，执行添加平台命令。
 
- - `ionic cordova platform add $platform`
+`ionic cordova platform add $platform`
 
- ### 真机运行
+### 真机运行
 
- - `ionic cordova run $platform --prod`
+`ionic cordova run $platform --prod`
 
- ### 在手机中调试
+### 在手机中调试
 
-  一般会开启热更新，并在命令提示符中打印应用和开发服务器日志，使用下面的命令：
+在开发时，开启热更新，并在命令提示符中打印应用和开发服务器日志，使用下面的命令：
 
-  `ionic run android -l -c –s `
+`ionic run android -l -c –s `
 
- ### 打包程序
+### 打包程序
 
- `ionic cordova build $platform --release --prod`
+`ionic cordova build $platform --release --prod`
 
 
